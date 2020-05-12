@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #EE7752,#E73C7E,#23A6D5,#23D5AB );
+    background-size: 400% 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: change 15s ease-in infinite;
+}
+.headerText h1{
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    color: white;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, -600%);
+}
+h2{
+    color: white;
+}
+.loginPanel{
+    position: absolute;
+    background-color: hsla(216, 7%, 14%, 0.692);
+    border-radius: 7px;
+    width: 500px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+    
+}
+.loginPanel input{
+    border: none;
+    background-color: hsla(214, 5%, 27%, 0.431);
+    color: white;
+    border-radius: 7px;
+    height: 25px;
+    margin: 15px;
+    padding: 5px 20px;
+}
+input[type=button]{
+    outline:0;
+    background-color: #E10070;
+    background-image: linear-gradient( 70deg,#E23428, rgba(255,255,255,0));
+    transition: 500ms;
+    height: 35px;
+    width: 120px;
+}
+.buttons:hover{
+    color: white;
+    font-weight: bold;
+    background-color: rgb(226, 139, 40);
+    font-size: 14px;
+    transition: 500ms;
+}
+.buttons:active{
+    box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;
+}
+.inputs:focus {outline:0;}
+
+.signIn{
+    justify-content: center;
+    width: 50%;
+ 
+}
+.signUp{
+    width: 50%;
+    
+}
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+

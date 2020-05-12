@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Kwick! Connexion/Inscription</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<main>
+		<div class="login-form">
+			<h1>Se connecter</h1>
+			<div class="txtb">
+				<input type="text" id='si_login' class='inputs'>
+				<span data-placeholder="Nom d'utilisateur"></span>
+			</div>
+			<div class="txtb">
+				<input type="password" id='si_pass'class='inputs'>
+				<span data-placeholder="Mot de passe"></span>
+			</div>
+			<input type="button" class="logbtn" id="si_btn" value="Se connecter">
+			<div class="bottom-txt">
+				Vous n'avez pas de compte ? <a class="signupBtn">S'inscrire</a>
+			</div>
+		</div>
+
+		<div class="signup-form">
+			<h1>S'inscrire</h1>
+			<div class="txtb">
+				<input type="text" id='su_login'class='inputs'>
+				<span data-placeholder="Nom d'utilisateur"></span>
+			</div>
+			<div class="txtb">
+				<input type="password" id='su_pass'class='inputs'>
+				<span data-placeholder="Mot de passe"></span>
+			</div>
+			<div class="txtb">
+				<input type="password" id='su_pass1'class='inputs'>
+				<span data-placeholder="Réecrire mot de passe"></span>
+			</div>
+			<input type="button" class="logbtn" id="su_btn" value="S'inscrire">
+			<div class="bottom-txt bt_su">
+				Vous avez déjà un compte ? <a calss="signupBtn">Se connecter</a>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2019 nezzarKwick FRA, Inc. All rights reserved.</p>
+	</footer>
+	<script src="src/jquery.js"></script>
+	<script src="src/loginPanel.js"></script>
+</body>
+
+</html>

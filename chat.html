@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kwick! Chat</title>
+    <link rel="stylesheet" href="css/chat.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="menu-vertical scrollMenu">
+            <a class="active">Utilisateurs connectés</a>
+        </div>
+        <div class="right-side">
+            <div id="menu">
+                <p class="welcome">Bienvenue, <b id="username"></b></p>
+                <p class="logout"><input type="button" value="Se deconnecter" id="logout"></p>
+                <div style="clear:both"></div>
+            </div>
+
+            <div id="chatbox" class="scrollMenu"><!-- messages s'affichent ici --></div>
+
+            <div id="userPanel">
+                <input name="userMsg" type="text" placeholder="Ecrire ici" id="userMsg" size="63" />
+                <input name="submitMsg" type="button" id="submitMsg" value="Envoyer" />
+            </div>
+        </div>
+    </main>
+
+    <script src="src/jquery.js"></script>
+    <script src="src/chat.js"></script>
+</body>
+
+</html>
